@@ -1,0 +1,182 @@
+          /* ------ GLOBAL STYLES ---------*/
+
+* {
+	font-family: 'Pontano Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(#7e7e7e, transparent 120%),
+				linear-gradient(0deg, #d3d3d3, transparent),
+				#d3d3d3 url('../images/texture.jpg') no-repeat center / cover;
+	opacity: .8;
+	color: white;
+}
+
+		/* ------ GENERAL STYLES ---------*/
+
+fieldset {
+	border: 0;
+}
+
+legend {
+	font-size: 1.75em;
+	font-weight: 700;
+	padding: 30px 0 10px 10px;
+	margin-top: 0;
+	border-top: 1px solid #002600;
+	width: 100%;
+	float: left;
+}
+
+label {
+	padding: 5px;
+	margin: 5px 0;
+	display: inline-block;
+	font-weight: 600;
+	text-shadow: 1px 1px #7e7e7e;
+}
+
+
+
+  		/* ------ HEADER STYLES ---------*/
+
+h1 {
+	text-align: center;
+	color: white;
+	padding: 20px;
+	text-transform: capitalize;
+	font-size: 1.75em;
+	margin: 0;
+}
+
+header:first-child,
+footer {
+	text-align: center;
+}
+
+.intro {
+	padding: 0 10px 30px;
+	border-bottom: 4px solid #002600;
+}
+
+		/* ------ CONTACT INFO STYLES ---------*/
+
+input[type=text], 
+input[type=email], 
+input[type=tel],
+select {
+	width: 100%;
+	height: 60px;
+	border-radius: 10px;
+	margin: px 0;
+	padding: 7px;
+	font-size: 1.15em;
+	color: #7e7e7e;
+}
+
+h2 {
+	padding: 10px;
+	margin: 15px 5px 0;
+}
+
+#zip {
+	margin-bottom: 20px;
+	width: 50%;
+}
+
+::-webkit-input-placeholder {
+   text-align: right;
+}
+
+
+		/* ------ NEWSLETTER STYLES ---------*/
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+	padding: 5px;
+	display: inline-block;
+	margin: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-left: 10px;
+}
+
+p {
+	margin: 5px;
+	padding: 5px;
+}
+
+.newsletter {
+	margin: 10px 0 -10px 10px;
+	padding: 0;
+}
+
+		/* ------ TEXTAREA STYLES ---------*/
+
+textarea {
+	width: 100%;
+	margin-bottom: 15px;
+	margin-top: -10px;
+	height: 100px;
+	border-radius: 10px;
+}
+
+		/* ------ SIGNUP BUTTON STYLES ---------*/
+
+button[type=submit] {
+	width: 100%;
+	background-color: #002600;
+	height: 75px;
+	border-radius: 10px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: 700;
+	font-family: Arial;
+}
+
+
+		/* ------ FOOTER STYLES ---------*/
+
+footer {
+	font-style: italic;
+}
+
+		/* ------ MEDIA QUERIES - DESKTOP ---------*/
+
+@media (min-width: 760px) {
+	input[type=text],
+	input[type=email],
+	input[type=tel],
+	#zip,
+	select {
+		display: inline-block;
+		margin: 0 auto;
+		max-width: 550px;
+		text-align: center;
+	}
+
+	.float {
+		float: left;
+		display: inline-block;
+		margin: 0 auto;
+		padding-right: 30px;
+		text-align: center;
+	}
+
+	#zip {
+		margin-bottom: 30px;
+	}
+
+	fieldset {
+		padding: 0 50px;
+	}
+
+	header {
+		padding: 0 50px;
+	}
+	
+
+}
