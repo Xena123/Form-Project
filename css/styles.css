@@ -38,6 +38,13 @@ label {
 }
 
 
+textarea:focus,
+input:focus {
+	background-color: lightgrey;
+	transition: 2s;
+}
+
+
 
   		/* ------ HEADER STYLES ---------*/
 
@@ -69,7 +76,7 @@ select {
 	width: 100%;
 	height: 60px;
 	border-radius: 10px;
-	margin: px 0;
+	margin: 0;
 	padding: 7px;
 	font-size: 1.15em;
 	color: #7e7e7e;
@@ -144,7 +151,7 @@ footer {
 	font-style: italic;
 }
 
-		/* ------ MEDIA QUERIES - DESKTOP ---------*/
+		/* ------ MEDIA QUERIES - TABLET ---------*/
 
 @media (min-width: 760px) {
 	input[type=text],
@@ -153,17 +160,18 @@ footer {
 	#zip,
 	select {
 		display: inline-block;
-		margin: 0 auto;
 		max-width: 550px;
-		text-align: center;
+		float: right;
+		margin: 10px 0;
+		width: calc(70% - 30px);
 	}
 
 	.float {
 		float: left;
 		display: inline-block;
-		margin: 0 auto;
-		padding-right: 30px;
-		text-align: center;
+		clear: both;
+		margin-top: 25px;
+		width: calc(30% - 30px);
 	}
 
 	#zip {
@@ -171,12 +179,26 @@ footer {
 	}
 
 	fieldset {
-		padding: 0 50px;
+		padding: 0 100px;
+		margin: 0;
 	}
 
 	header {
 		padding: 0 50px;
 	}
-	
+
+	label,
+	p {
+		font-size: 1.15em;
+	}
+
+}
+
+		/* ------ MEDIA QUERIES - TABLET ---------*/
+
+@media (min-width: 1024px) {
+	fieldset {
+		padding: 0 200px;
+	}
 
 }
