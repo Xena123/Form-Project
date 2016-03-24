@@ -1,13 +1,11 @@
 <!doctype html>
 <html lang="en">
-	<!doctype html>
-<html lang="en">
 	<head>
 	<link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<title>Responsive Layout Project</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" src="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
@@ -19,21 +17,21 @@
 		<form action="index.html" method="post">
 			<fieldset>
 				<legend>Contact Information</legend>
-				<label for="name" class="float">Full Name</label></br>
+				<label for="name" class="float">Full Name</label><br>
 				<input type="text" id="name" name="user_name" placeholder="Required">
 				</br>
-				<label for="mail" class="float">Email Address</label></br>
+				<label for="mail" class="float">Email Address</label><br>
 				<input type="email" id="mail" name="user_email" placeholder="Required">
 				</br>
-				<label for="phone" class="float">Phone Number</label></br>
+				<label for="phone" class="float">Phone Number</label><br>
 				<input type="tel" id="phone" name="user_phone"></br>
-				<label for="street" class="float">Street Address</label></br>
-				<input type="text" id="street" name="user_street"></br>
-				<label for="city" class="float">City</label></br>
-				<input type="text" id="city" name="user_city"></br>
-				<label for="state" class="float">State</label></br>
-				<select name="user_state">
-					<option default>Choose State</option>
+				<label for="street" class="float">Street Address</label><br>
+				<input type="text" id="street" name="user_street"><br>
+				<label for="city" class="float">City</label><br>
+				<input type="text" id="city" name="user_city"><br>
+				<label for="state" class="float">State</label><br>
+				<select name="user_state" id="state">
+					<option value=”” disabled selected hidden>Choose State</option>
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
 					<option value="AZ">Arizona</option>
@@ -85,26 +83,26 @@
 					<option value="WV">West Virginia</option>
 					<option value="WI">Wisconsin</option>
 					<option value="WY">Wyoming</option>
-				</select></br>				
-				<label for="zip" class="float">Zip Code</label></br>
+				</select><br>				
+				<label for="zip" class="float">Zip Code</label><br>
 				<input type="text" id="zip" name="user_zip">
 			</fieldset>
 			<fieldset>
 				<legend>Newsletter</legend>
 				<p>Select the newsletters you would like to receive</p>
-				<input type="checkbox" id="news_html" value="news" name="user_newsletter">
-				<label for="news_html">HTML News</label></br>
-				<input type="checkbox" id="news_css" value="news" name="user_newsletter">
-				<label for="news_css">CSS News</label></br>
-				<input type="checkbox" id="news_java" value="news" name="user_newsletter">
-				<label for="news_java">Javascript News</label></br>
-				<p class="newsletter">Newsletter Format</p></br>
+				<input type="checkbox" id="news_html" value="news-html" name="user_newsletter">
+				<label for="news_html">HTML News</label><br>
+				<input type="checkbox" id="news_css" value="news-css" name="user_newsletter">
+				<label for="news_css">CSS News</label><br>
+				<input type="checkbox" id="news_java" value="news-java" name="user_newsletter">
+				<label for="news_java">Javascript News</label><br>
+				<p class="newsletter">Newsletter Format</p><br>
 				<input type="radio" id="html" value="html" name="user_format">
-				<label for="format">HTML</label></br>
+				<label for="html">HTML</label><br>
 				<input type="radio" id="plain" value="plain" name="user_format">
-				<label for="plain">Plain text</label></br>
-				<p>Other topics you'd like to hear about</p></br>
-				<textarea id="suggestions" name="user_suggestions"></textarea></br>
+				<label for="plain">Plain text</label><br>
+				<label for="suggestions">Other topics you'd like to hear about</label><br>
+				<textarea id="suggestions" name="user_suggestions"></textarea><br>
 				<button type="submit">Sign up</button>
 			</fieldset>
 		</form>
